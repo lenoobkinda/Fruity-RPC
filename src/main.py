@@ -119,7 +119,7 @@ def rpc_loop():
             time.sleep(5)
             continue
 
-        idle = get_idle_time() > 10
+        idle = get_idle_time() > 250
         details = "Idle" if idle else "Composing Music"
 
         with settings_lock:
